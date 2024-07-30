@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-m {
+          background-color: transparent;
+          height: 130px;
+          width: 130px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .container-c1 {
+            background-color: rgb(33, 130, 98);
+          height: 90px;
+          width: 90px;
+          transition: all 1s ease-in-out;
+          position: absolute;
+          z-index: 1;
+        }
+        .container-c2 {
+            background-color: rgb(255, 72, 0);
+          height: 130px;
+          width: 130px;
+          transition: all 1s ease-in-out;
+          
+        }
+        .container-m:hover .container-c1{
+            transform: scale(1.7);
+            background-color: blue;
+            position: absolute;
+        }
+        .container-m:hover .container-c2{
+            transform: rotate(-360deg);
+            background-color: blueviolet;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-m">
+        <div class="container-c1"></div>
+        <div class="container-c2"></div>
+    </div>
+</body>
+</html>
